@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Fuerza 3 Días (Máquinas) + 2 Cardio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #4ade80;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    .subtitle { color: var(--muted); font-size: 0.95rem; }
+    .rules {
+      background: var(--card);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .rules ul { margin-left: 1.2rem; margin-top: 0.5rem; }
+    .day-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .day-title { font-size: 1.2rem; font-weight: 700; color: var(--accent); }
+    .badge {
+      background: #0284c7;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .badge.cardio { background: #16a34a; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.65rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    th { color: var(--muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
+    tr:last-child td { border-bottom: none; }
+    .muscle { color: var(--muted); font-size: 0.8rem; display: block; }
+    .gif-cell { width: 130px; }
+    .gif-cell img {
+      width: 120px;
+      height: 100px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 0.4rem;
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .gif-cell { width: 95px; }
+      .gif-cell img { width: 85px; height: 75px; }
+      th, td { padding: 0.5rem 0.3rem; font-size: 0.82rem; }
+    }
+    @media print {
+      body { background: #fff; color: #000; padding: 0; }
+      .day-card, .rules { border: 1px solid #ccc; background: #fff; page-break-inside: avoid; }
+      .day-title { color: #000; }
+      .subtitle, .muscle, th { color: #444; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Plan Semanal: Fuerza en Máquinas (3 Días) + Cardio (2 Días)</h1>
+    <p class="subtitle">Perfil: 1,75 m · 95 kg · Principiante · Enfoque Full Body (Cuerpo Completo)</p>
+  </header>
+
+  <section class="rules">
+    <strong>Las 4 reglas para progresar sin lesionarte:</strong>
+    <ul>
+      <li><strong>Peso adecuado:</strong> Elige un peso con el que llegues a la última repetición pudiendo hacer 1 o 2 más como máximo (sin llegar al fallo total).</li>
+      <li><strong>Progresión doble:</strong> Cuando logres hacer el máximo de repeticiones indicadas (ej. 12 en todas las series), sube una placa de peso el próximo día.</li>
+      <li><strong>Descanso:</strong> Descansa <strong>90 a 120 segundos</strong> entre series. Tiempo total por sesión: ~45–50 min.</li>
+      <li><strong>Calentamiento:</strong> 5 min de caminata suave + 1 serie muy ligera (50% del peso) del primer ejercicio.</li>
+    </ul>
+  </section>
+
+  <!-- LUNES -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-title">Lunes — Fuerza Día A (Énfasis Empuje y Cuádriceps)</span>
+      <span class="badge">Fuerza · 45 min</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>GIF</th>
+          <th>Ejercicio (Máquina / Polea)</th>
+          <th>Series</th>
+          <th>Reps</th>
+          <th>Clave técnica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="gif-cell"><img src="gifs/beinpresse_45_grad.gif" alt="Prensa de piernas" loading="lazy"></td>
+          <td><strong>1. Prensa de piernas (Leg Press)</strong><span class="muscle">Cuádriceps y glúteos</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Pies anchura de hombros, baja controlado sin despegar la lumbar del asiento.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/maqpecho.gif" alt="Press de pecho en máquina" loading="lazy"></td>
+          <td><strong>2. Press de pecho sentado en máquina</strong><span class="muscle">Pectoral, hombro anterior, tríceps</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Hombros atrás y abajo pegados al respaldo, agarre a la altura del pecho medio.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/dors2.gif" alt="Jalón al pecho" loading="lazy"></td>
+          <td><strong>3. Jalón al pecho en polea (Dorsalera)</strong><span class="muscle">Espalda (dorsal) y bíceps</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Lleva la barra a la clavícula sacando pecho, evita balancearte hacia atrás.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/femoral.gif" alt="Curl femoral" loading="lazy"></td>
+          <td><strong>4. Camilla / Curl femoral</strong><span class="muscle">Isquiotibiales (parte trasera pierna)</span></td>
+          <td>3</td>
+          <td>12–15</td>
+          <td>Aguanta 1 segundo al contraer y vuelve despacio en 2 segundos sin despegar cadera.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/7c9218fc52e8256003159658198439e2.gif" alt="Extensión de tríceps en polea" loading="lazy"></td>
+          <td><strong>5. Extensión de tríceps en polea alta</strong><span class="muscle">Tríceps</span></td>
+          <td>2–3</td>
+          <td>12–15</td>
+          <td>Codos pegados a las costillas, solo se mueve el antebrazo.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/pulley-ab-1-1.gif" alt="Crunch abdominal en máquina/polea" loading="lazy"></td>
+          <td><strong>6. Crunch abdominal en máquina / polea</strong><span class="muscle">Core / Abdomen</span></td>
+          <td>3</td>
+          <td>12–15</td>
+          <td>Encoge el pecho hacia la pelvis soltando todo el aire al bajar.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MARTES -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-title">Martes — Cardio Zona 2 (Caminata en Pendiente)</span>
+      <span class="badge cardio">Cardio · 40-45 min</span>
+    </div>
+    <p style="font-size: 0.9rem;">
+      <strong>Cinta:</strong> Pendiente <strong>8% a 12%</strong> · Velocidad <strong>4,8 a 5,5 km/h</strong> (ritmo donde puedas hablar frases cortas pero con respiración agitada, ~125-135 ppm). <em>No te sujetes de las barras con los brazos para no restar gasto calórico.</em>
+    </p>
+  </div>
+
+  <!-- MIÉRCOLES -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-title">Miércoles — Fuerza Día B (Énfasis Tracción y Cadena Posterior)</span>
+      <span class="badge">Fuerza · 45 min</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>GIF</th>
+          <th>Ejercicio (Máquina / Polea)</th>
+          <th>Series</th>
+          <th>Reps</th>
+          <th>Clave técnica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="gif-cell"><img src="gifs/dor6.gif" alt="Remo sentado en polea" loading="lazy"></td>
+          <td><strong>1. Remo sentado en polea o máquina</strong><span class="muscle">Espalda media y dorsal</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Tira con los codos hacia la cadera, junta las escápulas al final 1 segundo.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/hombro.gif" alt="Press de hombros en máquina" loading="lazy"></td>
+          <td><strong>2. Press de hombros en máquina</strong><span class="muscle">Hombros y tríceps</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Espalda bien apoyada, baja los agarres hasta la altura de las orejas/barbilla.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/parado_femor.gif" alt="Femoral en máquina" loading="lazy"></td>
+          <td><strong>3. Curl femoral en máquina (sentado/de pie/tumbado)</strong><span class="muscle">Isquiotibiales</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Controla el retorno del peso sin que choquen las placas.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/camillazx.gif" alt="Extensión de cuádriceps en camilla" loading="lazy"></td>
+          <td><strong>4. Extensión de cuádriceps en sillón/camilla</strong><span class="muscle">Cuádriceps</span></td>
+          <td>3</td>
+          <td>12–15</td>
+          <td>Sube hasta extender las rodillas y aguanta 1 segundo arriba apretando el muslo.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/mariposa.gif" alt="Máquina Mariposa" loading="lazy"></td>
+          <td><strong>5. Aperturas en Máquina Mariposa (Pec Deck)</strong><span class="muscle">Pectoral</span></td>
+          <td>2–3</td>
+          <td>12–15</td>
+          <td>Codos ligeramente flexionados, junta las manos frente al pecho sin encoger hombros.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/bicep_polea.gif" alt="Curl de bíceps en polea" loading="lazy"></td>
+          <td><strong>6. Curl de bíceps en polea baja (o banco Scott)</strong><span class="muscle">Bíceps</span></td>
+          <td>2–3</td>
+          <td>12–15</td>
+          <td>Sin impulso lumbar, baja hasta estirar el brazo por completo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JUEVES -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-title">Jueves — Cardio Zona 2 (Caminata en Pendiente)</span>
+      <span class="badge cardio">Cardio · 40-45 min</span>
+    </div>
+    <p style="font-size: 0.9rem;">
+      <strong>Cinta:</strong> Pendiente <strong>8% a 12%</strong> · Velocidad <strong>4,8 a 5,5 km/h</strong>. Si te notas con las piernas cansadas del miércoles, baja 1% la pendiente o haz 20 min cinta + 20 min bici estática/elíptica.
+    </p>
+  </div>
+
+  <!-- VIERNES -->
+  <div class="day-card">
+    <div class="day-header">
+      <span class="day-title">Viernes — Fuerza Día C (Cuerpo Completo Equilibrado)</span>
+      <span class="badge">Fuerza · 45 min</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>GIF</th>
+          <th>Ejercicio (Máquina / Polea)</th>
+          <th>Series</th>
+          <th>Reps</th>
+          <th>Clave técnica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="gif-cell"><img src="gifs/hack_new.gif" alt="Prensa o Sentadilla Hack" loading="lazy"></td>
+          <td><strong>1. Prensa de piernas o Sentadilla Hack</strong><span class="muscle">Glúteos, isquios y cuádriceps</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Espalda totalmente pegada al respaldo; pies un poco más adelantados para enfatizar glúteo.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/cruces_p.gif" alt="Cruces o Press en polea/máquina" loading="lazy"></td>
+          <td><strong>2. Press inclinado en máquina (o cruces en polea)</strong><span class="muscle">Pectoral y hombro</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Controla el estiramiento atrás sin llevar los codos más atrás de la línea del cuerpo.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/latzugmaschine_uebungen-untergriff_breit.gif" alt="Jalón al pecho agarre inverso/cerrado" loading="lazy"></td>
+          <td><strong>3. Jalón al pecho agarre supino/cerrado</strong><span class="muscle">Dorsal y bíceps</span></td>
+          <td>3</td>
+          <td>10–12</td>
+          <td>Tira hacia la parte alta del pecho manteniendo los codos cerca del cuerpo.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/v_lateral_polea.gif" alt="Vuelos laterales en polea" loading="lazy"></td>
+          <td><strong>4. Vuelos laterales en polea baja (o máquina)</strong><span class="muscle">Hombro lateral</span></td>
+          <td>3</td>
+          <td>12–15</td>
+          <td>Peso ligero, sube el brazo hasta la altura del hombro sin encoger el trapecio.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/panto_prens.gif" alt="Gemelos en prensa" loading="lazy"></td>
+          <td><strong>5. Gemelos en prensa (o máquina sentado)</strong><span class="muscle">Pantorrillas / Estabilidad tobillo</span></td>
+          <td>3</td>
+          <td>15</td>
+          <td>Pausa de 1 segundo estirando abajo y 1 segundo apretando arriba.</td>
+        </tr>
+        <tr>
+          <td class="gif-cell"><img src="gifs/dor7.gif" alt="Máquina espalda baja" loading="lazy"></td>
+          <td><strong>6. Extensión lumbar en máquina (Espalda baja)</strong><span class="muscle">Espalda baja y core posterior</span></td>
+          <td>2–3</td>
+          <td>12–15</td>
+          <td>Movimiento suave y controlado sin dar tirones bruscos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
